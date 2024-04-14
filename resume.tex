@@ -1,0 +1,262 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+%\ \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% \usepackage[sfdefault]{carlito}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\usepackage{calc} % added
+\newcommand{\resumeSubSubheadingLeft}[2]{% % added
+\begin{description}[leftmargin=!,labelwidth=\widthof{\small\bfseries #1}]
+    \item[\small #1]{\textit{\small  #2}}
+\end{description}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Aidan Loughney} \\ \vspace{1pt}
+     \small (616) 826-8228 $|$
+   \href{mailto:LoughneyAidan@gmail.com}{\underline{LoughneyAidan@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/aidanloughney}{\underline{linkedin.com/in/aidanloughney}} $|$
+    \href{https://www.aidanloughney.me/}{\underline{aidanloughney.me}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University Of Michigan}{Ann Arbor, MI}
+      {Bachelor of Science in Engineering in Computer Science; GPA 3.45/4.00}{Aug. 2019 -- May 2023}
+      
+      \resumeSubSubheadingLeft{Relevant Coursework:}{Data Structures and Algorithms, Web Systems, Software Engineering, Intro to AI, Conversational AI, UI Development, Intro to Computer Security}
+  \resumeSubHeadingListEnd
+
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C/C++, JavaScript, HTML/CSS, SQL (Postgres)} \\
+     \textbf{Frameworks/Libraries}{: React, Django, Flask, JUnit} \\ 
+     \textbf{Other}{: Git, Amazon EC2, Amazon S3, Docker  } \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {SoFi}{Salt Lake City, UT}
+      {Software Engineer}{October 2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Working in Borrow}
+     \resumeItemListEnd
+
+    \resumeSubheading
+      {Amazon Web Services (AWS)}{Seattle, WA}
+      {Software Development Engineer Intern}{May 2022 -- August 2022}
+      \resumeItemListStart
+        \resumeItem{Built a Java-based proof-of-concept of a redesigned API for S3 metadata retrieval, enhancing code maintainability and object integrity, setting the stage for improved API performance}
+        \resumeItem{
+        Collaborated with team members to design improvements to the S3 API, ensuring system resilience and developing a deeper understanding of system design}
+        \resumeItem{Implemented TDD methodologies using JUnit and Mockito, elevating code coverage and software reliability}
+
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+%
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+     \resumeProjectHeading
+          {\textbf{Climate Tech Handbook} $|$ \emph{Flask, Python, JavaScript}}{May 2023 -- July 2023}
+          \resumeItemListStart
+            \resumeItem{Open source contributor to Climate Tech Handbook, a wiki-like resource for anyone wishing to use technology to address the climate emergency}
+            \resumeItem{Lead the Data Magic team in the development of a REST API which assists in content management}
+            \resumeItem{Improvements to the content management tools allowed for a 90\% reduction in the time spent batch editing articles}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Tunebot} $|$ \emph{Python, FastAPI, React}}{February 2023 -- April 2023}
+          \resumeItemListStart
+            \resumeItem{Built a generative AI songwriter in collaboration with a team that generates music lyrics from a given prompt}
+            \resumeItem{Designed and implemented API logic for seamless data flow between a fine-tuned GPT-2 model and a spacCy NER model for accurate extraction of relevant information from the prompt}
+            \resumeItem{Developed an interactive chat-bot interface using React.js}
+             \resumeItem{Presented results of the model which produced high-quality unique song lyrics based on user prompts}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Volunteer Dashboard} $|$ \emph{Postgres, Django, Python}}{September 2021 -- April 2022}
+          \resumeItemListStart
+            \resumeItem{Partnered with a cross-disciplinary team of 6 other student to build a volunteer dashboard for a Doula organization}
+            \resumeItem{Developed a REST API that enabled volunteer and event scheduling, event creation, and volunteer sign up }
+            \resumeItem{Devised and implemented a relational database to store volunteer data and session data}
+            \resumeItemListEnd
+            
+\resumeProjectHeading
+          {\textbf{Instagram Web Clone} $|$ \emph{React, Flask, SQlite, Docker, Amazon EC2}}{September 2021 -- October 2021}
+          \resumeItemListStart
+            \resumeItem{Built a social networking web application similar to Instagram with client-side and server-side dynamic pages}
+            \resumeItem{Implemented the frontend using React.js and the backend/REST API with Python and its Flask and SQLite libraries}
+            \resumeItem{Containerized with Docker and deployed using Amazon EC2}
+          \resumeItemListEnd
+            
+
+    
+          \resumeItemListEnd
+          
+
+%-----------Organizations-----------
+\section{Organizations}
+ \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {HackBlue}{Ann Arbor, MI}
+      {Member}{October 2019 - January 2022}
+      \resumeItemListStart
+        \resumeItem{Organized one of the programs offering a basic introduction to CS concepts for underprivileged middle schoolers}\resumeItem{Facilitated and led weekly sessions using block-based programming and games to teach basic CS concepts to students}
+        \resumeItem{Designed curriculum that introduced CS concepts to 40+ middle school and high school students}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+
+
+\end{document}
