@@ -1,21 +1,21 @@
-name: Publish new release of resume
-on:
-  push:
-    tags:
-      - 'v*.*'
+name: LaTeX PDF generator
+on: [push]
+
 jobs:
-  build:
+  build_latex:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+
       - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@master
+        uses: xu-cheng/latex-action@v2
         with:
-          root_file: resume.tex
-      - name: Release
-        uses: softprops/action-gh-release@v1
+          root_file: "*.tex"
+          glob_root_file: true
+          
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v3
         with:
-          files: resume.pdf
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          name: PDF
+          path: main.pdf
