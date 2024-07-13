@@ -6,16 +6,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@master
 
       - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action@master
         with:
-          root_file: "*.tex"
+          root_file: "resume.tex"
           glob_root_file: true
           
       - name: Upload PDF file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@master
         with:
           name: PDF
           path: main.pdf
