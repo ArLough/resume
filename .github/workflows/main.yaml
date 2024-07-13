@@ -5,7 +5,7 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Git repository
+      - name: Checkout
         uses: actions/checkout@master
 
       - name: Compile LaTeX document
@@ -18,4 +18,4 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: PDF
-          path: main.pdf
+          path: resume.pdf
