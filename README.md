@@ -1,6 +1,6 @@
 # resume
-- A little repo to store my resume in
-- Heavily inspired by this [blog post](https://aless.co/resume-as-code)!
+- A little repo to store my resume
+- Heavily inspired by this [blog post](https://aless.co/resume-as-code) and this [github repo](https://github.com/dcousineau/resume)!
 
 ## How to make changes so a pdf is generated
 1. Make your changes to resume.tex
